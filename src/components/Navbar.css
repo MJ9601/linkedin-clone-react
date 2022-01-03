@@ -1,0 +1,72 @@
+.navbar {
+  position: sticky;
+  width: 100%;
+  padding: 0.6rem 2.3rem;
+  box-shadow: 0.2rem 0.4rem 1rem 0.2rem rgb(158, 158, 158);
+}
+.navbar__container {
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.navbar__left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__logo {
+  width: 4rem;
+  object-fit: contain;
+  margin-right: 2rem;
+}
+.navbar__inputWrapper {
+  background-color: rgb(226, 226, 226);
+  border-radius: 0.3rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__input {
+  border: none;
+  padding: 0.7rem;
+  font-size: 1.4rem;
+  background-color: inherit;
+  border-left: 0.1rem solid #888;
+  margin-left: 0.4rem;
+}
+
+.navbar__right {
+  display: flex;
+  align-items: center;
+}
+.navbar__right > div {
+  display: flex;
+  align-items: center;
+}
+.moreIcon {
+  display: none !important;
+}
+@media (max-width: 550px) {
+  .navbar__right > .navbar__items {
+    display: none;
+  }
+  .navbar__right > .navbar__items.active {
+    display: block !important;
+    position: absolute;
+    left: 0;
+    top: 7rem;
+    transition: all 0.4s ease-in-out;
+  }
+  .moreIcon {
+    display: block !important;
+    font-size: 2rem !important;
+    margin-left: 1.2rem !important;
+    cursor: pointer;
+  }
+  .moreIcon:hover {
+    color: red !important;
+  }
+}

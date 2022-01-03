@@ -1,0 +1,34 @@
+.navOp {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  cursor: pointer;
+  color: rgb(189, 189, 189) !important;
+  transition: all 0.3s ease-in-out !important;
+  margin: 0.6rem 0.8rem;
+}
+.navOp:hover {
+  color: #333 !important;
+}
+.navOp__title {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .navOp__title {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .navOp {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.4rem;
+    justify-content: start;
+  }
+  .navOp__title {
+    display: block;
+    margin-left: 1.7rem;
+  }
+}
