@@ -1,0 +1,32 @@
+.post {
+  margin-top: 2rem;
+  background-color: rgb(230, 229, 229);
+  padding: 1.4rem;
+  border-radius: 0.8rem;
+}
+.post__info {
+  display: flex;
+  margin-bottom: 1.8rem;
+  align-items: flex-start;
+}
+.post__info > .post__userInfo {
+  margin-left: 1.3rem;
+  margin-top: -0.5rem;
+}
+.post__info > div > h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.post__info > div > p {
+  font-size: 1.3rem;
+  color: rgb(170, 169, 169);
+}
+.post > p {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  margin-bottom: 1.8rem;
+}
+.post__review {
+  display: flex;
+  justify-content: space-around;
+}

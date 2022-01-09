@@ -1,0 +1,21 @@
+.postop {
+  display: flex;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+}
+.postop__title {
+  color: rgb(143, 139, 139);
+  font-size: 1.5rem;
+  margin-left: 0.4rem;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+.postop:hover {
+  color: black !important;
+  background-color: rgb(204, 201, 201);
+}
+.postop:hover > .postop__title {
+  color: black;
+}

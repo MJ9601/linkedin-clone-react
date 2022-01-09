@@ -19,3 +19,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.app {
+  min-height: 100vh;
+  position: relative;
+  background-color: rgb(207, 202, 192);
+}
+.app__container {
+  height: initial;
+  display: flex;
+  width: 75%;
+  margin: auto;
+  position: inherit;
+}
+@media (max-width: 1250px) {
+  .app__container {
+    width: 98%;
+  }
+}

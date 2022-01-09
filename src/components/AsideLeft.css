@@ -1,0 +1,91 @@
+.asideleft {
+  flex: 0.2;
+  margin-top: 2rem;
+  text-align: center;
+  min-width: 25rem;
+  position: sticky;
+  top: 6.5rem;
+}
+.asideleft__info {
+  background-color: #eee;
+  border: 0.2rem solid whitesmoke;
+  border-radius: 0.8rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.left__img {
+  width: 100%;
+  object-fit: cover;
+  height: 10rem;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+}
+.left__userInfo {
+  margin-top: -2.5rem;
+  padding: 0 0.5rem;
+}
+.left__username {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.left__email {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  /* text-overflow: clip; */
+  color: rgb(139, 139, 139);
+}
+.asideleft > hr {
+  border: 0.1rem solid whitesmoke;
+  margin-bottom: 2rem;
+}
+.left__viewer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+.left__viewTitle {
+  color: rgb(139, 139, 139);
+}
+.left__views {
+  color: rgb(0, 158, 206);
+}
+.left__recent {
+  background-color: rgb(230, 229, 229);
+  position: sticky;
+  top: 10rem;
+  width: 100%;
+  border-radius: 0.8rem;
+  border: 0.2rem solid whitesmoke;
+  text-align: start;
+  padding: 1rem 1.5rem;
+}
+.left__recent_head {
+  font-size: 2.3rem;
+  font-weight: 500;
+  font-style: italic;
+  color: rgb(110, 110, 110);
+  padding-bottom: 1rem;
+}
+.left__recent_topic {
+  width: 100%;
+  font-size: 1.9rem;
+  padding-left: 0.6rem;
+  padding-bottom: 0.9rem;
+  font-weight: 500;
+  color: rgb(155, 155, 155);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 0.4rem;
+}
+.left__recent_topic:hover {
+  color: black;
+  background-color: rgb(219, 219, 219);
+}
+@media (max-width: 730px) {
+  .asideleft {
+    display: none;
+  }
+}

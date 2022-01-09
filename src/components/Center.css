@@ -1,0 +1,61 @@
+.feed {
+  flex: 0.6;
+  min-width: 35rem;
+  margin: 2rem;
+}
+.feed__header {
+  background-color: rgb(230, 229, 229);
+  width: 98%;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+.feed__postmaker {
+  width: 98%;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  /* background-color: white; */
+  border: 0.2rem solid rgb(185, 183, 183);
+  margin-top: 0.7rem;
+  padding: 0.5rem;
+  border-radius: 4rem;
+}
+.feed__postmaker > form {
+  width: 95%;
+}
+.feed__input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.6rem;
+  border: none;
+  background-color: inherit;
+}
+.feed__input:focus {
+  border: none;
+  outline: none;
+}
+.feed__submit {
+  display: none;
+}
+.feed__options {
+  display: flex;
+  justify-content: space-around;
+  margin: 1.8rem 0;
+}
+.feed > hr {
+  border: 0.1rem solid rgb(185, 183, 183);
+}
+@media (max-width: 900px) {
+  .feed {
+    flex: 0.8;
+  }
+}
+@media (max-width: 730px) {
+  .feed {
+    flex: 1;
+  }
+}
